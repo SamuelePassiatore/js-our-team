@@ -5,6 +5,9 @@ Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membr
 Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 */
 
+// Prendo gli elementi dal DOM
+
+
 // Crea un array di oggetti per rappresentare i membri del team
 const team = [
     {
@@ -39,8 +42,17 @@ const team = [
     }
   ];
 
+const test = document.getElementById('test');
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for (let i = 0; i < team.length; i++){
     const currentMember = team[i];
     console.log(currentMember);
+    const memberDiv = document.createElement('div');
+    memberDiv.innerText= `
+    <h3>${team[i].name}</h3>
+    <p>${team[i].role}</p>
+    <img src="${team[i].url}" alt="Foto di ${team[i].name}">
+  `;
+  test.appendChild(memberDiv);
 }
+
