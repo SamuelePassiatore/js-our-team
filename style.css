@@ -1,6 +1,12 @@
+/* Custom properties */
+:root{
+--white-cream: #F5F5F1;
+}
+
 /* Generics */
 body {
     font-family: sans-serif;
+    background-color: var(--white-cream);
 }
 
 
