@@ -43,21 +43,19 @@ const team = [
   ];
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-let content = '';
+let currentMember = '';
 for (let i = 0; i < team.length; i++){
-    const currentMember = team[i];
-    console.log(currentMember);
-  content += `
-  <div class="col-4 my-4">
+  currentMember += `
+  <div class="col-xl-4 col-lg-6 col-sm-12 my-4">
     <div class="card h-100 border-0 text-center">
         <img src="${team[i].image}" alt="Foto di ${team[i].name} class="card-img-top rounded-0">
-        <h5 class="card-title pt-2">${team[i].name}</h5>
-        <span class="card-text">${team[i].role}</span>
+        <h5 class="card-title pt-3">${team[i].name}</h5>
+        <span class="card-text pb-3">${team[i].role}</span>
     </div>
   </div>
   `
 }
-  row.innerHTML = content;
+  row.innerHTML = currentMember;
 
 
 
