@@ -51,7 +51,7 @@ for (let i = 0; i < team.length; i++){
   <div class="col-4 my-4">
     <div class="card h-100 border-0 text-center">
         <img src="${team[i].image}" alt="Foto di ${team[i].name} class="card-img-top rounded-0">
-        <h5 class="card-title">${team[i].name}</h5>
+        <h5 class="card-title pt-2">${team[i].name}</h5>
         <span class="card-text">${team[i].role}</span>
     </div>
   </div>
