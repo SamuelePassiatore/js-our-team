@@ -9,5 +9,14 @@ body {
     background-color: var(--white-cream);
 }
 
+#team-container .card img{  
+    transition: all 2s;
+  }
+  
+#team-container .card:hover {
+    opacity: 0.9;
+    border: 2px solid white;
+  }
+
 
 
